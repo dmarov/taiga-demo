@@ -1,10 +1,9 @@
 	<form
 	    class="b-form"
-	    [formGroup]="testForm"
 	>
 	    <p>
 	        <tui-input
-	            formControlName="testValue"
+	            [formControl]="control"
 	            tuiTextfieldSize="s"
 	            [tuiTextfieldCleaner]="true"
 	        >

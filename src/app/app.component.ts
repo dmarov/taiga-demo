@@ -14,8 +14,6 @@ import { TuiInputModule } from "@taiga-ui/kit";
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}]
 })
 export class AppComponent {
-  readonly testForm = new FormGroup({
-    testValue: new FormControl('mail@mail.ru'),
-  });
+  control = new FormControl('');
 }
 
